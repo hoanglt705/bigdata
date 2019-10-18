@@ -1,4 +1,4 @@
-name := "MyNewScala"
+name := "BootStraping"
 
 version := "0.1"
 
