@@ -47,7 +47,6 @@ object CarPrice {
     println("Step 5: Create a resampledData and compute the mean mpg and variance for each category")
     val firstResample = sampleRdd.sample(true,1).cache()
     var result = firstResample.groupBy(K).agg(avg(V) as "Mean", variance(V) as "Variance").cache()
-    result.show()
     println("10%")
     for(i<-2 to TIMES){
       var resampledData = sampleRdd.sample(true,1).groupBy(K).agg(avg(V) as "Mean", variance(V) as "Variance")
