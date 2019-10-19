@@ -5,7 +5,7 @@ import org.apache.spark._
 import org.apache.spark.sql.types.{DoubleType, StringType, StructField, StructType}
 import org.apache.spark.sql.{Row, SparkSession}
 
-//https://vincentarelbundock.github.io/Rdatasets/doc/DAAG/carprice.html
+// http://vincentarelbundock.github.io/Rdatasets/doc/Ecdat/Benefits.html
 
 case class Employee(sex: String, tenure: String)
 object Unemployment {
